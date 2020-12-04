@@ -5,7 +5,13 @@
     <h1>{{ test | swdFormatterEmptyData('----') }}</h1>
     <h1>{{ test1 | swdFormatterMoney(formatterBefore, formatterAfter) }}</h1>
     <h2>Essential Links</h2>
-    <div id="sss" style="width: 30%" v-clamp={clamp:3}>
+    <div
+      id="sss"
+      style="width: 30%"
+      v-clamp={clamp:3}
+      v-clipboard:copy="test1"
+      v-clipboard:success="copy"
+      v-clipboard:error="onError">
       很抱歉！没有搜索到相关模板很抱歉！没有搜索到相关模板很抱歉！没有搜索到相关模板很抱歉！没有搜索到相关模板word name
     </div>
     <ul>
@@ -41,6 +47,12 @@ export default {
     formatterAfter(value){
       return value + '万'
     },
+    copy(e){
+      console.log(e.text)
+    },
+    onError(e){
+      console.log(e)
+    }
   }
 }
 </script>
