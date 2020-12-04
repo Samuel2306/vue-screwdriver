@@ -10,7 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'screwdriver.js'
+    filename: 'screwdriver.js',
+    library: 'vue-screwdriver', // library指定的就是你使用require时的模块名，这里便是require("vueAjaxUpload")
   },
   module: {
     rules: [

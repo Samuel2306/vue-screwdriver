@@ -1,18 +1,18 @@
-# vue-plugin
+# vue-screwdriver
 
-> A Vue.js project
+> A plugin used to Vue, contains filter, directives and some utility methods.
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+# install vue-screwdriver
+npm install vue-screwdriver --save
 
-# serve with hot reload at localhost:8080
-npm run dev
+# important the plugin somewhere
+import vueScrewdriver from 'vue-screwdriver'
 
-# build for production with minification
-npm run build
+# install the plugin
+Vue.use('vueScrewdriver')
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
