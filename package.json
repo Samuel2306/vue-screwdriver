@@ -5,9 +5,10 @@
   "author": "1224042766@qq.ocm",
   "license": "MIT",
   "private": true,
+  "main": "dist/vuePlugins.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.plugin.config.js"
   },
   "dependencies": {
     "axios": "^0.21.0",
@@ -20,6 +21,7 @@
     "not ie <= 8"
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.12.7",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
