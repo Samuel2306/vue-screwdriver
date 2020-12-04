@@ -5,6 +5,9 @@
     <h1>{{ test | swdFormatterEmptyData('----') }}</h1>
     <h1>{{ test1 | swdFormatterMoney(formatterBefore, formatterAfter) }}</h1>
     <h2>Essential Links</h2>
+    <div id="sss" style="width: 30%" v-clamp={clamp:3}>
+      很抱歉！没有搜索到相关模板很抱歉！没有搜索到相关模板很抱歉！没有搜索到相关模板很抱歉！没有搜索到相关模板word name
+    </div>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
