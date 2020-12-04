@@ -9,8 +9,8 @@ export {
 }
 export default {
   install: function(Vue, options){
-    utilPlugin.install()
-    filtersPlugin.install()
-    directivesPlugin.install()
+    utilPlugin.install(Vue, options)
+    filtersPlugin.install(Vue, options)
+    directivesPlugin.install(Vue, options)
   }
 }
