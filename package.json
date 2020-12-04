@@ -1,5 +1,5 @@
 {
-  "name": "VueScrewdriver",
+  "name": "screwdriver",
   "description": "A plugin used to Vue, contains filter, directives and some utility methods.",
   "version": "1.0.0",
   "author": "1224042766@qq.ocm",
