@@ -1,14 +1,14 @@
 {
-  "name": "vue-plugin",
+  "name": "vue-screwdriver",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "1224042766@qq.ocm",
   "license": "MIT",
   "private": true,
-  "main": "dist/vuePlugins.js",
+  "main": "dist/screwdriver.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.plugin.config.js"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.plugins.config.js"
   },
   "dependencies": {
     "axios": "^0.21.0",
@@ -21,10 +21,9 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "@babel/preset-env": "^7.12.7",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",

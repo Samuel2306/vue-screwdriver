@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vuePlugins.js'
+    filename: 'screwdriver.js'
   },
   module: {
     rules: [
