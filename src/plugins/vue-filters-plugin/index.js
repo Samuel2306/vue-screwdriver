@@ -38,6 +38,25 @@ const filters = {
     }
 
     return res
+  },
+  /**
+   * 格式化金额，将金额每三位加个逗号
+   * @param value
+   * @param before: 前置处理函数
+   * @param after: 后置处理函数
+   * @returns {string}
+   */
+  formatterMoney: function(value, before, after){
+    if(before && identifier.isFunction(before)){
+      value = before(value)
+    }
+    let str = value.toString();
+    let reg = str.indexOf(".") > -1 ? /(\d)(?=(\d{3})+\.)/g : /(\d)(?=(?:\d{3})+$)/g;
+    str = str.replace(reg,"$1,");
+    if(after && identifier.isFunction(after)){
+      str = after(str)
+    }
+    return str
   }
 }
 

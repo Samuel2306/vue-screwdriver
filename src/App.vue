@@ -3,6 +3,7 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h1>{{ test | swdFormatterEmptyData('----') }}</h1>
+    <h1>{{ test1 | swdFormatterMoney(formatterBefore, formatterAfter) }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -26,8 +27,17 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      test: 0
+      test: 0,
+      test1: 100.111
     }
+  },
+  methods: {
+    formatterBefore(value){
+      return parseInt(value)
+    },
+    formatterAfter(value){
+      return value + '万'
+    },
   }
 }
 </script>
