@@ -1,7 +1,7 @@
 {
-  "name": "vuescrewdriver",
+  "name": "vue-screwdriver",
   "description": "A plugin used to Vue, contains filter, directives and some utility methods.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "1224042766@qq.ocm",
   "license": "MIT",
   "main": "dist/screwdriver.js",
