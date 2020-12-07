@@ -1,13 +1,12 @@
 {
   "name": "vue-screwdriver",
   "description": "A plugin used to Vue, contains filter, directives and some utility methods.",
-  "version": "1.0.1",
+  "version": "1.0.13",
   "author": "1224042766@qq.ocm",
   "license": "MIT",
-  "main": "dist/screwdriver.js",
+  "main": "./dist/screwdriver.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.plugins.config.js"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
     "axios": "^0.21.0",
