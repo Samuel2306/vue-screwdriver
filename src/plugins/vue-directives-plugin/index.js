@@ -258,7 +258,6 @@ const directives = {
 
 export default {
   install: function(Vue, options){
-    console.log("install directives-plugin")
     for(let prop in directives){
       Vue.directive(prop, directives[prop])
     }

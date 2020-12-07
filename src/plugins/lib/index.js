@@ -7,9 +7,6 @@ const install = function(Vue, options){
   Vue.use(VueScrollLock)
   Vue.use(VueClickOutside)
 }
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
-}
 
 export default {
   install
