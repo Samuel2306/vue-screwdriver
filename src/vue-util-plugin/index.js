@@ -6,8 +6,8 @@ import {
 
 export default {
   install: function(Vue, options){
-    Vue.prototype.$identifier = identifier
-    Vue.prototype.$validation = validation
-    Vue.prototype.$stringHandler = stringHandler
+    Vue.prototype.$identifier = identifier;
+    Vue.prototype.$validation = validation;
+    Vue.prototype.$stringHandler = stringHandler;
   }
 }

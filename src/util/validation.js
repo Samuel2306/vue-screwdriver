@@ -31,6 +31,11 @@ function checkIDCard(IDCard){
   return /^[1-9]\d{5}(18|19|20|(3\d))\d{2}((0[1-9])|(1[0-2]))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/.test(IDCard)
 }
 
+function checkPlateNumber(plateNumber) {
+  const plateNumberReg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-Z0-9]{4,5}[A-Z0-9挂学警港澳]{1}$/;
+  return plateNumberReg.test(plateNumber);
+}
+
 
 const validation = {
   checkPhone: checkPhone,
@@ -38,6 +43,7 @@ const validation = {
   checkIDCard: checkIDCard,
   checkIsChinese: checkIsChinese,
   checkIsContainedChinese: checkIsContainedChinese,
+  checkPlateNumber: checkPlateNumber,
 }
 
 export default validation
